@@ -1,4 +1,4 @@
-#include "lnetaddress.h"
+#include "InetAddress.h"
 #include <strings.h>
 #include <string.h>
 
@@ -21,7 +21,7 @@ InetAddress::InetAddress(const sockaddr_in &addr):addr_(addr)
 string InetAddress::toIp() const
 {
     char buf[64] = {0};
-    ::inet_ntop(AF_INET, &addr_.sin_addr, buf, sizeof buf);
+    inet_ntop(AF_INET, &addr_.sin_addr, buf, sizeof buf);
     return buf;
 }
 
@@ -30,14 +30,14 @@ string InetAddress::toIpPort() const
 {
     // ip:port
     char buf[64] = {0};
-    ::inet_ntop(AF_INET, &addr_.sin_addr, buf, sizeof buf);
+    inet_ntop(AF_INET, &addr_.sin_addr, buf, sizeof buf);
     size_t end = strlen(buf);
     uint16_t port = ntohs(addr_.sin_port);
     sprintf(buf+end, ":%u", port);
     return buf;
 }
 
-//获取端口号
+//获取端口
 uint16_t InetAddress::toPort() const
 {
     return ntohs(addr_.sin_port);
@@ -49,6 +49,7 @@ const sockaddr_in* InetAddress::getSockAddr() const
     return &addr_;
 }
 
+//设置sockaddr
 void InetAddress::setSockAddr(const sockaddr_in &addr)
 {
     addr_ = addr;

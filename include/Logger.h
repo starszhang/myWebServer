@@ -1,6 +1,6 @@
 #pragma once
 
-#include "noncopyable.h"
+#include "Noncopyable.h"
 #include <string>
 
 // 宏定义简化日志记录的调用

@@ -1,4 +1,4 @@
-#include "timestamp.h"
+#include "TimeStamp.h"
 #include <time.h>
 
 using namespace std;
