@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/stars/starsdemo/mymuduo/build",
+  "command": "/usr/bin/c++  -I/home/stars/starsdemo/mymuduo/./include  -g -g -std=gnu++11 -o CMakeFiles/muduo.dir/main.cpp.o -c /home/stars/starsdemo/mymuduo/main.cpp",
+  "file": "/home/stars/starsdemo/mymuduo/main.cpp"
+},
+{
+  "directory": "/home/stars/starsdemo/mymuduo/build",
+  "command": "/usr/bin/c++  -I/home/stars/starsdemo/mymuduo/./include  -g -g -std=gnu++11 -o CMakeFiles/muduo.dir/src/lnetaddress.cpp.o -c /home/stars/starsdemo/mymuduo/src/lnetaddress.cpp",
+  "file": "/home/stars/starsdemo/mymuduo/src/lnetaddress.cpp"
+},
+{
+  "directory": "/home/stars/starsdemo/mymuduo/build",
+  "command": "/usr/bin/c++  -I/home/stars/starsdemo/mymuduo/./include  -g -g -std=gnu++11 -o CMakeFiles/muduo.dir/src/logger.cpp.o -c /home/stars/starsdemo/mymuduo/src/logger.cpp",
+  "file": "/home/stars/starsdemo/mymuduo/src/logger.cpp"
+},
+{
+  "directory": "/home/stars/starsdemo/mymuduo/build",
+  "command": "/usr/bin/c++  -I/home/stars/starsdemo/mymuduo/./include  -g -g -std=gnu++11 -o CMakeFiles/muduo.dir/src/timestamp.cpp.o -c /home/stars/starsdemo/mymuduo/src/timestamp.cpp",
+  "file": "/home/stars/starsdemo/mymuduo/src/timestamp.cpp"
+}
+]
