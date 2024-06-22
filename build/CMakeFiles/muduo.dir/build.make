@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stars/starsdemo/mymuduo
+CMAKE_SOURCE_DIR = /root/starsdemo/myWebServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stars/starsdemo/mymuduo/build
+CMAKE_BINARY_DIR = /root/starsdemo/myWebServer/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/muduo.dir/depend.make
@@ -72,76 +72,92 @@ include CMakeFiles/muduo.dir/flags.make
 CMakeFiles/muduo.dir/main.cpp.o: CMakeFiles/muduo.dir/flags.make
 CMakeFiles/muduo.dir/main.cpp.o: ../main.cpp
 CMakeFiles/muduo.dir/main.cpp.o: CMakeFiles/muduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stars/starsdemo/mymuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/muduo.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muduo.dir/main.cpp.o -MF CMakeFiles/muduo.dir/main.cpp.o.d -o CMakeFiles/muduo.dir/main.cpp.o -c /home/stars/starsdemo/mymuduo/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/muduo.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muduo.dir/main.cpp.o -MF CMakeFiles/muduo.dir/main.cpp.o.d -o CMakeFiles/muduo.dir/main.cpp.o -c /root/starsdemo/myWebServer/main.cpp
 
 CMakeFiles/muduo.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stars/starsdemo/mymuduo/main.cpp > CMakeFiles/muduo.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/starsdemo/myWebServer/main.cpp > CMakeFiles/muduo.dir/main.cpp.i
 
 CMakeFiles/muduo.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stars/starsdemo/mymuduo/main.cpp -o CMakeFiles/muduo.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/starsdemo/myWebServer/main.cpp -o CMakeFiles/muduo.dir/main.cpp.s
 
-CMakeFiles/muduo.dir/src/lnetaddress.cpp.o: CMakeFiles/muduo.dir/flags.make
-CMakeFiles/muduo.dir/src/lnetaddress.cpp.o: ../src/lnetaddress.cpp
-CMakeFiles/muduo.dir/src/lnetaddress.cpp.o: CMakeFiles/muduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stars/starsdemo/mymuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/muduo.dir/src/lnetaddress.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muduo.dir/src/lnetaddress.cpp.o -MF CMakeFiles/muduo.dir/src/lnetaddress.cpp.o.d -o CMakeFiles/muduo.dir/src/lnetaddress.cpp.o -c /home/stars/starsdemo/mymuduo/src/lnetaddress.cpp
+CMakeFiles/muduo.dir/src/Inetaddress.cpp.o: CMakeFiles/muduo.dir/flags.make
+CMakeFiles/muduo.dir/src/Inetaddress.cpp.o: ../src/Inetaddress.cpp
+CMakeFiles/muduo.dir/src/Inetaddress.cpp.o: CMakeFiles/muduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/muduo.dir/src/Inetaddress.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muduo.dir/src/Inetaddress.cpp.o -MF CMakeFiles/muduo.dir/src/Inetaddress.cpp.o.d -o CMakeFiles/muduo.dir/src/Inetaddress.cpp.o -c /root/starsdemo/myWebServer/src/Inetaddress.cpp
 
-CMakeFiles/muduo.dir/src/lnetaddress.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo.dir/src/lnetaddress.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stars/starsdemo/mymuduo/src/lnetaddress.cpp > CMakeFiles/muduo.dir/src/lnetaddress.cpp.i
+CMakeFiles/muduo.dir/src/Inetaddress.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo.dir/src/Inetaddress.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/starsdemo/myWebServer/src/Inetaddress.cpp > CMakeFiles/muduo.dir/src/Inetaddress.cpp.i
 
-CMakeFiles/muduo.dir/src/lnetaddress.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo.dir/src/lnetaddress.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stars/starsdemo/mymuduo/src/lnetaddress.cpp -o CMakeFiles/muduo.dir/src/lnetaddress.cpp.s
+CMakeFiles/muduo.dir/src/Inetaddress.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo.dir/src/Inetaddress.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/starsdemo/myWebServer/src/Inetaddress.cpp -o CMakeFiles/muduo.dir/src/Inetaddress.cpp.s
 
-CMakeFiles/muduo.dir/src/logger.cpp.o: CMakeFiles/muduo.dir/flags.make
-CMakeFiles/muduo.dir/src/logger.cpp.o: ../src/logger.cpp
-CMakeFiles/muduo.dir/src/logger.cpp.o: CMakeFiles/muduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stars/starsdemo/mymuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/muduo.dir/src/logger.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muduo.dir/src/logger.cpp.o -MF CMakeFiles/muduo.dir/src/logger.cpp.o.d -o CMakeFiles/muduo.dir/src/logger.cpp.o -c /home/stars/starsdemo/mymuduo/src/logger.cpp
+CMakeFiles/muduo.dir/src/Logger.cpp.o: CMakeFiles/muduo.dir/flags.make
+CMakeFiles/muduo.dir/src/Logger.cpp.o: ../src/Logger.cpp
+CMakeFiles/muduo.dir/src/Logger.cpp.o: CMakeFiles/muduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/muduo.dir/src/Logger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muduo.dir/src/Logger.cpp.o -MF CMakeFiles/muduo.dir/src/Logger.cpp.o.d -o CMakeFiles/muduo.dir/src/Logger.cpp.o -c /root/starsdemo/myWebServer/src/Logger.cpp
 
-CMakeFiles/muduo.dir/src/logger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo.dir/src/logger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stars/starsdemo/mymuduo/src/logger.cpp > CMakeFiles/muduo.dir/src/logger.cpp.i
+CMakeFiles/muduo.dir/src/Logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo.dir/src/Logger.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/starsdemo/myWebServer/src/Logger.cpp > CMakeFiles/muduo.dir/src/Logger.cpp.i
 
-CMakeFiles/muduo.dir/src/logger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo.dir/src/logger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stars/starsdemo/mymuduo/src/logger.cpp -o CMakeFiles/muduo.dir/src/logger.cpp.s
+CMakeFiles/muduo.dir/src/Logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo.dir/src/Logger.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/starsdemo/myWebServer/src/Logger.cpp -o CMakeFiles/muduo.dir/src/Logger.cpp.s
 
-CMakeFiles/muduo.dir/src/timestamp.cpp.o: CMakeFiles/muduo.dir/flags.make
-CMakeFiles/muduo.dir/src/timestamp.cpp.o: ../src/timestamp.cpp
-CMakeFiles/muduo.dir/src/timestamp.cpp.o: CMakeFiles/muduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stars/starsdemo/mymuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/muduo.dir/src/timestamp.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muduo.dir/src/timestamp.cpp.o -MF CMakeFiles/muduo.dir/src/timestamp.cpp.o.d -o CMakeFiles/muduo.dir/src/timestamp.cpp.o -c /home/stars/starsdemo/mymuduo/src/timestamp.cpp
+CMakeFiles/muduo.dir/src/Socket.cpp.o: CMakeFiles/muduo.dir/flags.make
+CMakeFiles/muduo.dir/src/Socket.cpp.o: ../src/Socket.cpp
+CMakeFiles/muduo.dir/src/Socket.cpp.o: CMakeFiles/muduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/muduo.dir/src/Socket.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muduo.dir/src/Socket.cpp.o -MF CMakeFiles/muduo.dir/src/Socket.cpp.o.d -o CMakeFiles/muduo.dir/src/Socket.cpp.o -c /root/starsdemo/myWebServer/src/Socket.cpp
 
-CMakeFiles/muduo.dir/src/timestamp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo.dir/src/timestamp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stars/starsdemo/mymuduo/src/timestamp.cpp > CMakeFiles/muduo.dir/src/timestamp.cpp.i
+CMakeFiles/muduo.dir/src/Socket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo.dir/src/Socket.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/starsdemo/myWebServer/src/Socket.cpp > CMakeFiles/muduo.dir/src/Socket.cpp.i
 
-CMakeFiles/muduo.dir/src/timestamp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo.dir/src/timestamp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stars/starsdemo/mymuduo/src/timestamp.cpp -o CMakeFiles/muduo.dir/src/timestamp.cpp.s
+CMakeFiles/muduo.dir/src/Socket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo.dir/src/Socket.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/starsdemo/myWebServer/src/Socket.cpp -o CMakeFiles/muduo.dir/src/Socket.cpp.s
+
+CMakeFiles/muduo.dir/src/TimeStamp.cpp.o: CMakeFiles/muduo.dir/flags.make
+CMakeFiles/muduo.dir/src/TimeStamp.cpp.o: ../src/TimeStamp.cpp
+CMakeFiles/muduo.dir/src/TimeStamp.cpp.o: CMakeFiles/muduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/muduo.dir/src/TimeStamp.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/muduo.dir/src/TimeStamp.cpp.o -MF CMakeFiles/muduo.dir/src/TimeStamp.cpp.o.d -o CMakeFiles/muduo.dir/src/TimeStamp.cpp.o -c /root/starsdemo/myWebServer/src/TimeStamp.cpp
+
+CMakeFiles/muduo.dir/src/TimeStamp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo.dir/src/TimeStamp.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/starsdemo/myWebServer/src/TimeStamp.cpp > CMakeFiles/muduo.dir/src/TimeStamp.cpp.i
+
+CMakeFiles/muduo.dir/src/TimeStamp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo.dir/src/TimeStamp.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/starsdemo/myWebServer/src/TimeStamp.cpp -o CMakeFiles/muduo.dir/src/TimeStamp.cpp.s
 
 # Object files for target muduo
 muduo_OBJECTS = \
 "CMakeFiles/muduo.dir/main.cpp.o" \
-"CMakeFiles/muduo.dir/src/lnetaddress.cpp.o" \
-"CMakeFiles/muduo.dir/src/logger.cpp.o" \
-"CMakeFiles/muduo.dir/src/timestamp.cpp.o"
+"CMakeFiles/muduo.dir/src/Inetaddress.cpp.o" \
+"CMakeFiles/muduo.dir/src/Logger.cpp.o" \
+"CMakeFiles/muduo.dir/src/Socket.cpp.o" \
+"CMakeFiles/muduo.dir/src/TimeStamp.cpp.o"
 
 # External object files for target muduo
 muduo_EXTERNAL_OBJECTS =
 
 muduo: CMakeFiles/muduo.dir/main.cpp.o
-muduo: CMakeFiles/muduo.dir/src/lnetaddress.cpp.o
-muduo: CMakeFiles/muduo.dir/src/logger.cpp.o
-muduo: CMakeFiles/muduo.dir/src/timestamp.cpp.o
+muduo: CMakeFiles/muduo.dir/src/Inetaddress.cpp.o
+muduo: CMakeFiles/muduo.dir/src/Logger.cpp.o
+muduo: CMakeFiles/muduo.dir/src/Socket.cpp.o
+muduo: CMakeFiles/muduo.dir/src/TimeStamp.cpp.o
 muduo: CMakeFiles/muduo.dir/build.make
 muduo: CMakeFiles/muduo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stars/starsdemo/mymuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable muduo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable muduo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/muduo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +169,6 @@ CMakeFiles/muduo.dir/clean:
 .PHONY : CMakeFiles/muduo.dir/clean
 
 CMakeFiles/muduo.dir/depend:
-	cd /home/stars/starsdemo/mymuduo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stars/starsdemo/mymuduo /home/stars/starsdemo/mymuduo /home/stars/starsdemo/mymuduo/build /home/stars/starsdemo/mymuduo/build /home/stars/starsdemo/mymuduo/build/CMakeFiles/muduo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/starsdemo/myWebServer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/starsdemo/myWebServer /root/starsdemo/myWebServer /root/starsdemo/myWebServer/build /root/starsdemo/myWebServer/build /root/starsdemo/myWebServer/build/CMakeFiles/muduo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/muduo.dir/depend
 

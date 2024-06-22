@@ -45,25 +45,25 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stars/starsdemo/mymuduo
+CMAKE_SOURCE_DIR = /root/starsdemo/myWebServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stars/starsdemo/mymuduo/build
+CMAKE_BINARY_DIR = /root/starsdemo/myWebServer/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/muduo.dir/all
+all: CMakeFiles/main.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/muduo.dir/clean
+clean: CMakeFiles/main.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/muduo.dir
+# Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/muduo.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo.dir/build.make CMakeFiles/muduo.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo.dir/build.make CMakeFiles/muduo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stars/starsdemo/mymuduo/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target muduo"
-.PHONY : CMakeFiles/muduo.dir/all
+CMakeFiles/main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/muduo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stars/starsdemo/mymuduo/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/muduo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stars/starsdemo/mymuduo/build/CMakeFiles 0
-.PHONY : CMakeFiles/muduo.dir/rule
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/starsdemo/myWebServer/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/starsdemo/myWebServer/build/CMakeFiles 0
+.PHONY : CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-muduo: CMakeFiles/muduo.dir/rule
-.PHONY : muduo
+main: CMakeFiles/main.dir/rule
+.PHONY : main
 
 # clean rule for target.
-CMakeFiles/muduo.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/muduo.dir/build.make CMakeFiles/muduo.dir/clean
-.PHONY : CMakeFiles/muduo.dir/clean
+CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

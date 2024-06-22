@@ -1,5 +1,5 @@
-#include "timestamp.h"
-#include "logger.h"
+#include "TimeStamp.h"
+#include "Logger.h"
 #include <iostream>
 
 using namespace std;

@@ -19,7 +19,7 @@ include_directories(./include)
 aux_source_directory(./src SRC_LIST)
 
 #生成可执行文件
-add_executable(muduo main.cpp ${SRC_LIST})
+add_executable(main main.cpp ${SRC_LIST})
 
 # 指定可执行文件链接时需要依赖的库文件
-target_link_libraries(muduo pthread)
+target_link_libraries(main pthread)

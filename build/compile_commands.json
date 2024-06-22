@@ -1,22 +1,42 @@
 [
 {
-  "directory": "/home/stars/starsdemo/mymuduo/build",
-  "command": "/usr/bin/c++  -I/home/stars/starsdemo/mymuduo/./include  -g -g -std=gnu++11 -o CMakeFiles/muduo.dir/main.cpp.o -c /home/stars/starsdemo/mymuduo/main.cpp",
-  "file": "/home/stars/starsdemo/mymuduo/main.cpp"
+  "directory": "/root/starsdemo/myWebServer/build",
+  "command": "/usr/bin/c++  -I/root/starsdemo/myWebServer/./include  -g -g -std=gnu++11 -o CMakeFiles/main.dir/main.cpp.o -c /root/starsdemo/myWebServer/main.cpp",
+  "file": "/root/starsdemo/myWebServer/main.cpp"
 },
 {
-  "directory": "/home/stars/starsdemo/mymuduo/build",
-  "command": "/usr/bin/c++  -I/home/stars/starsdemo/mymuduo/./include  -g -g -std=gnu++11 -o CMakeFiles/muduo.dir/src/lnetaddress.cpp.o -c /home/stars/starsdemo/mymuduo/src/lnetaddress.cpp",
-  "file": "/home/stars/starsdemo/mymuduo/src/lnetaddress.cpp"
+  "directory": "/root/starsdemo/myWebServer/build",
+  "command": "/usr/bin/c++  -I/root/starsdemo/myWebServer/./include  -g -g -std=gnu++11 -o CMakeFiles/main.dir/src/Channel.cpp.o -c /root/starsdemo/myWebServer/src/Channel.cpp",
+  "file": "/root/starsdemo/myWebServer/src/Channel.cpp"
 },
 {
-  "directory": "/home/stars/starsdemo/mymuduo/build",
-  "command": "/usr/bin/c++  -I/home/stars/starsdemo/mymuduo/./include  -g -g -std=gnu++11 -o CMakeFiles/muduo.dir/src/logger.cpp.o -c /home/stars/starsdemo/mymuduo/src/logger.cpp",
-  "file": "/home/stars/starsdemo/mymuduo/src/logger.cpp"
+  "directory": "/root/starsdemo/myWebServer/build",
+  "command": "/usr/bin/c++  -I/root/starsdemo/myWebServer/./include  -g -g -std=gnu++11 -o CMakeFiles/main.dir/src/EventLoop.cpp.o -c /root/starsdemo/myWebServer/src/EventLoop.cpp",
+  "file": "/root/starsdemo/myWebServer/src/EventLoop.cpp"
 },
 {
-  "directory": "/home/stars/starsdemo/mymuduo/build",
-  "command": "/usr/bin/c++  -I/home/stars/starsdemo/mymuduo/./include  -g -g -std=gnu++11 -o CMakeFiles/muduo.dir/src/timestamp.cpp.o -c /home/stars/starsdemo/mymuduo/src/timestamp.cpp",
-  "file": "/home/stars/starsdemo/mymuduo/src/timestamp.cpp"
+  "directory": "/root/starsdemo/myWebServer/build",
+  "command": "/usr/bin/c++  -I/root/starsdemo/myWebServer/./include  -g -g -std=gnu++11 -o CMakeFiles/main.dir/src/Inetaddress.cpp.o -c /root/starsdemo/myWebServer/src/Inetaddress.cpp",
+  "file": "/root/starsdemo/myWebServer/src/Inetaddress.cpp"
+},
+{
+  "directory": "/root/starsdemo/myWebServer/build",
+  "command": "/usr/bin/c++  -I/root/starsdemo/myWebServer/./include  -g -g -std=gnu++11 -o CMakeFiles/main.dir/src/Logger.cpp.o -c /root/starsdemo/myWebServer/src/Logger.cpp",
+  "file": "/root/starsdemo/myWebServer/src/Logger.cpp"
+},
+{
+  "directory": "/root/starsdemo/myWebServer/build",
+  "command": "/usr/bin/c++  -I/root/starsdemo/myWebServer/./include  -g -g -std=gnu++11 -o CMakeFiles/main.dir/src/Socket.cpp.o -c /root/starsdemo/myWebServer/src/Socket.cpp",
+  "file": "/root/starsdemo/myWebServer/src/Socket.cpp"
+},
+{
+  "directory": "/root/starsdemo/myWebServer/build",
+  "command": "/usr/bin/c++  -I/root/starsdemo/myWebServer/./include  -g -g -std=gnu++11 -o CMakeFiles/main.dir/src/TcpServer.cpp.o -c /root/starsdemo/myWebServer/src/TcpServer.cpp",
+  "file": "/root/starsdemo/myWebServer/src/TcpServer.cpp"
+},
+{
+  "directory": "/root/starsdemo/myWebServer/build",
+  "command": "/usr/bin/c++  -I/root/starsdemo/myWebServer/./include  -g -g -std=gnu++11 -o CMakeFiles/main.dir/src/TimeStamp.cpp.o -c /root/starsdemo/myWebServer/src/TimeStamp.cpp",
+  "file": "/root/starsdemo/myWebServer/src/TimeStamp.cpp"
 }
 ]

@@ -1,3 +1,5 @@
+#pragma once
+
 /*
 *继承自noncopyable的派生类无法进行拷贝构造和赋值操作
 */

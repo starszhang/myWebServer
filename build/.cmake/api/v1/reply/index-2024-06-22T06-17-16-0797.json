@@ -8,10 +8,10 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "/usr/local/bin/cmake",
-			"cpack" : "/usr/local/bin/cpack",
-			"ctest" : "/usr/local/bin/ctest",
-			"root" : "/usr/local/share/cmake-3.22"
+			"cmake" : "/usr/bin/cmake",
+			"cpack" : "/usr/bin/cpack",
+			"ctest" : "/usr/bin/ctest",
+			"root" : "/usr/share/cmake-3.22"
 		},
 		"version" : 
 		{
@@ -26,7 +26,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-3d95fdac986cbda13425.json",
+			"jsonFile" : "codemodel-v2-c1ba297264a802ffc7d0.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-1db6abddd98a2a026e7d.json",
+			"jsonFile" : "cache-v2-64f7228a3c107bb54754.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-e871bd1118a55c0bd3cc.json",
+			"jsonFile" : "cmakeFiles-v1-57615f9a4099faf49421.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -53,7 +53,7 @@
 			}
 		},
 		{
-			"jsonFile" : "toolchains-v1-9da386607fb230eeb899.json",
+			"jsonFile" : "toolchains-v1-99265b04de7ada3aac9e.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
@@ -90,7 +90,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-1db6abddd98a2a026e7d.json",
+						"jsonFile" : "cache-v2-64f7228a3c107bb54754.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -99,7 +99,7 @@
 						}
 					},
 					{
-						"jsonFile" : "codemodel-v2-3d95fdac986cbda13425.json",
+						"jsonFile" : "codemodel-v2-c1ba297264a802ffc7d0.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
@@ -108,7 +108,7 @@
 						}
 					},
 					{
-						"jsonFile" : "toolchains-v1-9da386607fb230eeb899.json",
+						"jsonFile" : "toolchains-v1-99265b04de7ada3aac9e.json",
 						"kind" : "toolchains",
 						"version" : 
 						{
@@ -117,7 +117,7 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-e871bd1118a55c0bd3cc.json",
+						"jsonFile" : "cmakeFiles-v1-57615f9a4099faf49421.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{

@@ -5,7 +5,7 @@
 using namespace std;
 
 //构造函数:协议族+端口号+ip地址
-InetAddress::InetAddress(uint16_t port = 0, string ip = "127.0.0.1")
+InetAddress::InetAddress(uint16_t port, string ip)
 {
     bzero(&addr_, sizeof(addr_));
     addr_.sin_family = AF_INET;

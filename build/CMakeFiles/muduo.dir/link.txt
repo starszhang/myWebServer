@@ -1,1 +1,1 @@
-/usr/bin/c++  -g -g -rdynamic CMakeFiles/muduo.dir/main.cpp.o CMakeFiles/muduo.dir/src/lnetaddress.cpp.o CMakeFiles/muduo.dir/src/logger.cpp.o CMakeFiles/muduo.dir/src/timestamp.cpp.o -o muduo  -lpthread 
+/usr/bin/c++  -g -rdynamic CMakeFiles/muduo.dir/main.cpp.o CMakeFiles/muduo.dir/src/Inetaddress.cpp.o CMakeFiles/muduo.dir/src/Logger.cpp.o CMakeFiles/muduo.dir/src/Socket.cpp.o CMakeFiles/muduo.dir/src/TimeStamp.cpp.o -o muduo  -lpthread 
