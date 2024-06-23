@@ -49,8 +49,8 @@ public:
     bool isWriting() const { return events_ & kWriteEvent; }
     bool isReading() const { return events_ & kReadEvent; }
 
-    int index() { return index_; }  //返回Channel在Poller中的索引
-    void set_index(int index) { index_ = index; }  
+    int index() { return index_; }  
+    void set_index(int index) { index_ = index; }  //设置channel在Poller中的状态
 
     EventLoop* ownerLoop() { return loop_; }
     void remove(); //从EventLoop中移除当前Channel
@@ -68,13 +68,13 @@ private:
     const int fd_; //该channel绑定的fd
     int events_; //channel该兴趣的事件类型
     int revents_; //poller返回的实际发生的事件类型
-    int index_; //记录该channel在Poller中的位置索引
+    int index_; //记录该channel在Poller中的状态
 
     std::weak_ptr<void> tie_; //解决Channel对象生命周期问题的弱指针
     bool tied_; //标记Channel是否已绑定。如果为true，表示Channel和某个对象（通过tie_）已绑定，处理事件时需要确保该对象存在
 
     ReadEventCallback readCallback_; //读事件回调函数，文件描述符上有可读事件时调用
-    EventCallback writeCallback_; //写事件回调函数。当文件描述符上有可写事件时，Channel会调用这个回调函数。
-    EventCallback closeCallback_; //关闭事件回调函数。当文件描述符关闭时，Channel会调用这个回调函数。
+    EventCallback writeCallback_; //写事件回调函数。文件描述符上有可写事件时调用
+    EventCallback closeCallback_; //关闭事件回调函数。文件描述符关闭时调用
     EventCallback errorCallback_; //错误事件回调函数，文件描述符上发生错误时调用
 };
