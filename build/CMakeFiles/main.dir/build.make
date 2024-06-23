@@ -97,10 +97,24 @@ CMakeFiles/main.dir/src/Channel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Channel.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/starsdemo/myWebServer/src/Channel.cpp -o CMakeFiles/main.dir/src/Channel.cpp.s
 
+CMakeFiles/main.dir/src/EpollPoller.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/EpollPoller.cpp.o: ../src/EpollPoller.cpp
+CMakeFiles/main.dir/src/EpollPoller.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/EpollPoller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/EpollPoller.cpp.o -MF CMakeFiles/main.dir/src/EpollPoller.cpp.o.d -o CMakeFiles/main.dir/src/EpollPoller.cpp.o -c /root/starsdemo/myWebServer/src/EpollPoller.cpp
+
+CMakeFiles/main.dir/src/EpollPoller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/EpollPoller.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/starsdemo/myWebServer/src/EpollPoller.cpp > CMakeFiles/main.dir/src/EpollPoller.cpp.i
+
+CMakeFiles/main.dir/src/EpollPoller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/EpollPoller.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/starsdemo/myWebServer/src/EpollPoller.cpp -o CMakeFiles/main.dir/src/EpollPoller.cpp.s
+
 CMakeFiles/main.dir/src/EventLoop.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/EventLoop.cpp.o: ../src/EventLoop.cpp
 CMakeFiles/main.dir/src/EventLoop.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/EventLoop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/EventLoop.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/EventLoop.cpp.o -MF CMakeFiles/main.dir/src/EventLoop.cpp.o.d -o CMakeFiles/main.dir/src/EventLoop.cpp.o -c /root/starsdemo/myWebServer/src/EventLoop.cpp
 
 CMakeFiles/main.dir/src/EventLoop.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/main.dir/src/EventLoop.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Inetaddress.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Inetaddress.cpp.o: ../src/Inetaddress.cpp
 CMakeFiles/main.dir/src/Inetaddress.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/Inetaddress.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/Inetaddress.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Inetaddress.cpp.o -MF CMakeFiles/main.dir/src/Inetaddress.cpp.o.d -o CMakeFiles/main.dir/src/Inetaddress.cpp.o -c /root/starsdemo/myWebServer/src/Inetaddress.cpp
 
 CMakeFiles/main.dir/src/Inetaddress.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/main.dir/src/Inetaddress.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Logger.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Logger.cpp.o: ../src/Logger.cpp
 CMakeFiles/main.dir/src/Logger.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/Logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/Logger.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Logger.cpp.o -MF CMakeFiles/main.dir/src/Logger.cpp.o.d -o CMakeFiles/main.dir/src/Logger.cpp.o -c /root/starsdemo/myWebServer/src/Logger.cpp
 
 CMakeFiles/main.dir/src/Logger.cpp.i: cmake_force
@@ -139,10 +153,24 @@ CMakeFiles/main.dir/src/Logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Logger.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/starsdemo/myWebServer/src/Logger.cpp -o CMakeFiles/main.dir/src/Logger.cpp.s
 
+CMakeFiles/main.dir/src/Poller.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/Poller.cpp.o: ../src/Poller.cpp
+CMakeFiles/main.dir/src/Poller.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/Poller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Poller.cpp.o -MF CMakeFiles/main.dir/src/Poller.cpp.o.d -o CMakeFiles/main.dir/src/Poller.cpp.o -c /root/starsdemo/myWebServer/src/Poller.cpp
+
+CMakeFiles/main.dir/src/Poller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Poller.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/starsdemo/myWebServer/src/Poller.cpp > CMakeFiles/main.dir/src/Poller.cpp.i
+
+CMakeFiles/main.dir/src/Poller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Poller.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/starsdemo/myWebServer/src/Poller.cpp -o CMakeFiles/main.dir/src/Poller.cpp.s
+
 CMakeFiles/main.dir/src/Socket.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Socket.cpp.o: ../src/Socket.cpp
 CMakeFiles/main.dir/src/Socket.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/Socket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/Socket.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Socket.cpp.o -MF CMakeFiles/main.dir/src/Socket.cpp.o.d -o CMakeFiles/main.dir/src/Socket.cpp.o -c /root/starsdemo/myWebServer/src/Socket.cpp
 
 CMakeFiles/main.dir/src/Socket.cpp.i: cmake_force
@@ -156,7 +184,7 @@ CMakeFiles/main.dir/src/Socket.cpp.s: cmake_force
 CMakeFiles/main.dir/src/TcpServer.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/TcpServer.cpp.o: ../src/TcpServer.cpp
 CMakeFiles/main.dir/src/TcpServer.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/TcpServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/src/TcpServer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/TcpServer.cpp.o -MF CMakeFiles/main.dir/src/TcpServer.cpp.o.d -o CMakeFiles/main.dir/src/TcpServer.cpp.o -c /root/starsdemo/myWebServer/src/TcpServer.cpp
 
 CMakeFiles/main.dir/src/TcpServer.cpp.i: cmake_force
@@ -170,7 +198,7 @@ CMakeFiles/main.dir/src/TcpServer.cpp.s: cmake_force
 CMakeFiles/main.dir/src/TimeStamp.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/TimeStamp.cpp.o: ../src/TimeStamp.cpp
 CMakeFiles/main.dir/src/TimeStamp.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/TimeStamp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/src/TimeStamp.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/TimeStamp.cpp.o -MF CMakeFiles/main.dir/src/TimeStamp.cpp.o.d -o CMakeFiles/main.dir/src/TimeStamp.cpp.o -c /root/starsdemo/myWebServer/src/TimeStamp.cpp
 
 CMakeFiles/main.dir/src/TimeStamp.cpp.i: cmake_force
@@ -185,9 +213,11 @@ CMakeFiles/main.dir/src/TimeStamp.cpp.s: cmake_force
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
 "CMakeFiles/main.dir/src/Channel.cpp.o" \
+"CMakeFiles/main.dir/src/EpollPoller.cpp.o" \
 "CMakeFiles/main.dir/src/EventLoop.cpp.o" \
 "CMakeFiles/main.dir/src/Inetaddress.cpp.o" \
 "CMakeFiles/main.dir/src/Logger.cpp.o" \
+"CMakeFiles/main.dir/src/Poller.cpp.o" \
 "CMakeFiles/main.dir/src/Socket.cpp.o" \
 "CMakeFiles/main.dir/src/TcpServer.cpp.o" \
 "CMakeFiles/main.dir/src/TimeStamp.cpp.o"
@@ -197,15 +227,17 @@ main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/main.cpp.o
 main: CMakeFiles/main.dir/src/Channel.cpp.o
+main: CMakeFiles/main.dir/src/EpollPoller.cpp.o
 main: CMakeFiles/main.dir/src/EventLoop.cpp.o
 main: CMakeFiles/main.dir/src/Inetaddress.cpp.o
 main: CMakeFiles/main.dir/src/Logger.cpp.o
+main: CMakeFiles/main.dir/src/Poller.cpp.o
 main: CMakeFiles/main.dir/src/Socket.cpp.o
 main: CMakeFiles/main.dir/src/TcpServer.cpp.o
 main: CMakeFiles/main.dir/src/TimeStamp.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/starsdemo/myWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

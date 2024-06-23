@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/root/starsdemo/myWebServer/./include
 
-CXX_FLAGS =  -g -g -std=gnu++11
+CXX_FLAGS =  -g -std=c++11 -g
 

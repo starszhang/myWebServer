@@ -177,6 +177,30 @@ src/Channel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Channel.cpp.s
 .PHONY : src/Channel.cpp.s
 
+src/EpollPoller.o: src/EpollPoller.cpp.o
+.PHONY : src/EpollPoller.o
+
+# target to build an object file
+src/EpollPoller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/EpollPoller.cpp.o
+.PHONY : src/EpollPoller.cpp.o
+
+src/EpollPoller.i: src/EpollPoller.cpp.i
+.PHONY : src/EpollPoller.i
+
+# target to preprocess a source file
+src/EpollPoller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/EpollPoller.cpp.i
+.PHONY : src/EpollPoller.cpp.i
+
+src/EpollPoller.s: src/EpollPoller.cpp.s
+.PHONY : src/EpollPoller.s
+
+# target to generate assembly for a file
+src/EpollPoller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/EpollPoller.cpp.s
+.PHONY : src/EpollPoller.cpp.s
+
 src/EventLoop.o: src/EventLoop.cpp.o
 .PHONY : src/EventLoop.o
 
@@ -248,6 +272,30 @@ src/Logger.s: src/Logger.cpp.s
 src/Logger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Logger.cpp.s
 .PHONY : src/Logger.cpp.s
+
+src/Poller.o: src/Poller.cpp.o
+.PHONY : src/Poller.o
+
+# target to build an object file
+src/Poller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Poller.cpp.o
+.PHONY : src/Poller.cpp.o
+
+src/Poller.i: src/Poller.cpp.i
+.PHONY : src/Poller.i
+
+# target to preprocess a source file
+src/Poller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Poller.cpp.i
+.PHONY : src/Poller.cpp.i
+
+src/Poller.s: src/Poller.cpp.s
+.PHONY : src/Poller.s
+
+# target to generate assembly for a file
+src/Poller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Poller.cpp.s
+.PHONY : src/Poller.cpp.s
 
 src/Socket.o: src/Socket.cpp.o
 .PHONY : src/Socket.o
@@ -336,6 +384,9 @@ help:
 	@echo "... src/Channel.o"
 	@echo "... src/Channel.i"
 	@echo "... src/Channel.s"
+	@echo "... src/EpollPoller.o"
+	@echo "... src/EpollPoller.i"
+	@echo "... src/EpollPoller.s"
 	@echo "... src/EventLoop.o"
 	@echo "... src/EventLoop.i"
 	@echo "... src/EventLoop.s"
@@ -345,6 +396,9 @@ help:
 	@echo "... src/Logger.o"
 	@echo "... src/Logger.i"
 	@echo "... src/Logger.s"
+	@echo "... src/Poller.o"
+	@echo "... src/Poller.i"
+	@echo "... src/Poller.s"
 	@echo "... src/Socket.o"
 	@echo "... src/Socket.i"
 	@echo "... src/Socket.s"

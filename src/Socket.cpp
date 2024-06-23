@@ -28,7 +28,7 @@ void Socket::bind(const InetAddress &servAddr)
 {
     if (::bind(fd_, (sockaddr *)servAddr.getSockAddr(), sizeof(sockaddr)) == -1)
     {
-        LOG_FATAL("bind sockfd:%d fail \n", fd_);
+        LOG_FATAL("bind sockfd:%d fail\n", fd_);
     }
 }
 
@@ -37,7 +37,7 @@ void Socket::listen(int fdNum)
 {
     if (::listen(fd_, fdNum) == -1)
     {
-        LOG_FATAL("listen sockfd:%d fail", fd_);
+        LOG_FATAL("listen sockfd:%d fail\n", fd_);
     }
 }
 
@@ -55,7 +55,7 @@ int Socket::accept(InetAddress &clientAddr)
     }
     else
     {
-        LOG_FATAL("accept new connect fail");
+        LOG_FATAL("accept new connect fail\n");
     }
     return clientfd;
 }
@@ -65,7 +65,7 @@ void Socket::shutdown()
 {
     if (::shutdown(fd_, SHUT_WR) < 0)
     {
-        LOG_ERROR("shutdown write error");
+        LOG_ERROR("shutdown write error\n");
     }
 }
 

@@ -9,7 +9,7 @@
 
 //通道类，
 //封装了sockfd及其感兴趣的event(如EPOLLIN、EPOLLOUT等)；
-//还绑定了poller返回的具体事件(即epoll_wait返回的事件数组),负责调用相应的回调函数
+//还绑定了poller返回的实际发生的事件(即epoll_wait返回的事件数组),负责调用相应的回调函数
 class TimeStamp;
 class EventLoop;
 class Channel:noncopyable
@@ -35,7 +35,7 @@ public:
 
     int fd() const { return fd_; }
     int events() const { return events_; }
-    int set_revents(int revent) { revents_ = revent; }
+    void set_revents(int revent) { revents_ = revent; }
 
     //设置fd的事件状态
     void enableReading() { events_ |= kReadEvent; update(); }     //启用读事件，并更新到Poller
@@ -73,7 +73,7 @@ private:
     std::weak_ptr<void> tie_; //解决Channel对象生命周期问题的弱指针
     bool tied_; //标记Channel是否已绑定。如果为true，表示Channel和某个对象（通过tie_）已绑定，处理事件时需要确保该对象存在
 
-    ReadEventCallback readCallback_; //读事件回调函数。当文件描述符上有可读事件时，Channel会调用这个回调函数
+    ReadEventCallback readCallback_; //读事件回调函数，文件描述符上有可读事件时调用
     EventCallback writeCallback_; //写事件回调函数。当文件描述符上有可写事件时，Channel会调用这个回调函数。
     EventCallback closeCallback_; //关闭事件回调函数。当文件描述符关闭时，Channel会调用这个回调函数。
     EventCallback errorCallback_; //错误事件回调函数，文件描述符上发生错误时调用
