@@ -48,14 +48,14 @@ TimeStamp EPollPoller::poll(int timeoutMs, ChannelList *activeChannels)
     }
     else if (numEvents == 0)
     {
-        LOG_DEBUG("%s timeout! \n", __FUNCTION__);
+        LOG_DEBUG("%s(%s):%s timeout! \n", __FILE__, __LINE__, __FUNCTION__);
     }
     else
     {
         if (saveErrno != EINTR)
         {
             errno = saveErrno;
-            LOG_ERROR("EPollPoller::poll() error! \n");
+            LOG_ERROR("%s(%s):EPollPoller::poll() error! \n", __FILE__, __LINE__);
         }
     }
     return now;
@@ -67,7 +67,7 @@ void EPollPoller::updateChannel(Channel *channel)
     const int index = channel->index();
     LOG_INFO("func=%s => fd=%d events=%d index=%d \n", __FUNCTION__, channel->fd(), channel->events(), index);
 
-    if (index == kNew || index == kDeleted) //添加
+    if (index == kNew || index == kDeleted) //如果当前channel未添加到Poller或被删除过，在poller上没有其信息，则将其添加至epoll树
     {
         if (index == kNew) 
         {
@@ -78,7 +78,7 @@ void EPollPoller::updateChannel(Channel *channel)
         channel->set_index(kAdded);
         update(EPOLL_CTL_ADD, channel);
     }
-    else  // channel已经在poller上注册过了，修改或删除
+    else  //channel已经在poller上注册过了，则进行修改或删除
     {
         int fd = channel->fd();
         if (channel->isNoneEvent())
@@ -115,7 +115,7 @@ void EPollPoller::fillActiveChannels(int numEvents, ChannelList *activeChannels)
     for (int i=0; i < numEvents; ++i)
     {
         Channel *channel = static_cast<Channel*>(events_[i].data.ptr);
-        channel->set_revents(events_[i].events);
+        channel->set_revents(events_[i].events); //设置实际发生的事件给channel
         activeChannels->push_back(channel); // EventLoop就拿到了它的poller给它返回的所有发生事件的channel列表了
     }
 }
@@ -136,11 +136,11 @@ void EPollPoller::update(int operation, Channel *channel)
     {
         if (operation == EPOLL_CTL_DEL)
         {
-            LOG_ERROR("epoll_ctl del error:%d\n", errno);
+            LOG_ERROR("%s(%s):epoll_ctl del error:%d\n", __FILE__, __LINE__, errno);
         }
         else
         {
-            LOG_FATAL("epoll_ctl add/mod error:%d\n", errno);
+            LOG_FATAL("%s(%s):epoll_ctl add/mod error:%d\n", __FILE__, __LINE__, errno);
         }
     }
 }

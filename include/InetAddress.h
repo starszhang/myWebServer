@@ -11,6 +11,7 @@ public:
     InetAddress(uint16_t port = 0, std::string ip = "127.0.0.1");
     InetAddress(const sockaddr_in &addr);
 
+    //获取ip、端口号
     std::string toIp() const;
     std::string toIpPort() const;
     uint16_t toPort() const;

@@ -17,10 +17,10 @@ public:
 
 private:
     static const int kInitEventListSize = 16;
-    void fillActiveChannels(int numEvents, ChannelList* activeChannels) const; //将发生事件的通道填充到 activeChannels 
+    void fillActiveChannels(int numEvents, ChannelList* activeChannels) const; //将发生事件的通道添加到activeChannels中 
     void update(int operation, Channel* channel);
 
     using EventList = std::vector<struct epoll_event>;
     int epollfd_;
-    EventList events_;
+    EventList events_; //epoll_wait中用到的epoll_event类型的events
 };

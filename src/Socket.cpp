@@ -45,8 +45,8 @@ void Socket::listen(int fdNum)
 int Socket::accept(InetAddress &clientAddr)
 {
     sockaddr_in addr;
-    socklen_t len = sizeof addr;
-    bzero(&addr, sizeof addr);
+    socklen_t len = sizeof(addr);
+    bzero(&addr, sizeof(addr));
     // 接受一个新的客户端连接,指定新连接的套接字应设置为非阻塞模式，并在执行exec系统调用时自动关闭。
     int clientfd = ::accept4(fd_, (sockaddr *)&addr, &len, SOCK_NONBLOCK | SOCK_CLOEXEC);
     if (clientfd > 0)

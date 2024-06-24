@@ -60,9 +60,9 @@ private:
     void handleEventWithGuard(TimeStamp receiveTime); //确保在处理事件时，相关对象不会被销毁
 
     //定义channel感兴趣的事件类型
-    static const int kNoneEvent; //无事件，用于初始化
-    static const int kReadEvent; //读事件
-    static const int kWriteEvent; //写事件
+    static const int Channel::kNoneEvent = 0; //无事件，用于初始化
+    static const int Channel::kReadEvent = EPOLLIN | EPOLLPRI; //读事件
+    static const int Channel::kWriteEvent = EPOLLOUT; //写事件
 
     EventLoop* loop_; //事件循环
     const int fd_; //该channel绑定的fd
